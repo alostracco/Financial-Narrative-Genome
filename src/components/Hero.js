@@ -23,11 +23,12 @@ const Hero = () => {
 
 const styles = {
   hero: {
-    fontfamily: "IBM Plex Mono",
-    backgroundImage: `public\BGImageHomePage.jpg`,
+    fontFamily: "IBM Plex Mono",
+    backgroundImage: `url('/BGImageHomePage.jpg')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "100vh",
+    padding: "80px 20px", // Added padding to prevent full screen cover blocking buttons
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
