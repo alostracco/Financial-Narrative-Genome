@@ -2,7 +2,6 @@ import React from "react";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
-import Login from "./components/Login";
 
 const App = () => {
   return (
@@ -19,17 +18,3 @@ const App = () => {
 };
 
 export default App;
-
-/*
-function App() {
-  return (
-    <div>
-      <Nav />
-      <Hero />
-      <Login />
-    </div>
-  );
-}
-
-export default App;
-*/
