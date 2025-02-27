@@ -1,23 +1,43 @@
 import React from "react";
+import { useState } from "react";
+import Login from "./Login";
 
 const Nav = () => {
+  const [showLogin, setShowLogin] = useState(false);
   return (
-    <nav style={styles.nav}>
-      <div style={styles.logo}>Stock Sentiment Analysis</div>
-      <div style={styles.links}>
-        <a href="/" style={styles.link}>
-          Home
-        </a>
-        <a href="/dashboard" style={styles.link}>
-          Dashboard
-        </a>
-        <a href="/about" style={styles.link}>
-          About Us
-        </a>
-        <button style={styles.loginButton}>Login</button>
-        <button style={styles.signupButton}>Sign Up</button>
-      </div>
-    </nav>
+    <>
+      <nav style={styles.nav}>
+        <div style={styles.logo}>Stock Sentiment Analysis</div>
+        <div style={styles.links}>
+          <a href="/" style={styles.link}>
+            Home
+          </a>
+          <a href="/dashboard" style={styles.link}>
+            Dashboard
+          </a>
+          <a href="/about" style={styles.link}>
+            About Us
+          </a>
+          <button style={styles.loginButton} onClick={() => setShowLogin(true)}>
+            Login
+          </button>
+          <button style={styles.signupButton}>Sign Up</button>
+        </div>
+      </nav>
+      {showLogin && ( // Conditionally render the login modal
+        <div style={styles.modal}>
+          <div style={styles.modalContent}>
+            <button
+              style={styles.closeButton}
+              onClick={() => setShowLogin(false)}
+            >
+              ✖
+            </button>
+            <Login />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
