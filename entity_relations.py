@@ -1,11 +1,15 @@
 # pip install -q -U google-generativeai
-
 import google.generativeai as genai
 import json
 import re
+import os
+from dotenv import load_dotenv
 
-# Configure your API key (replace with your actual API key)
-genai.configure(api_key="")
+load_dotenv()
+
+er_api_key = os.getenv("API_KEY")
+
+genai.configure(api_key=er_api_key)
 
 model = genai.GenerativeModel('gemini-2.0-flash')
 

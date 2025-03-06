@@ -1,0 +1,244 @@
+{
+    "nodes": [
+        {
+            "id": "Employee Safety and Well-being",
+            "type": "theme",
+            "importance": "10"
+        },
+        {
+            "id": "Meeting Customer Demand for Essential Products",
+            "type": "theme",
+            "importance": "10"
+        },
+        {
+            "id": "Combating Price Gouging",
+            "type": "theme",
+            "importance": "9"
+        },
+        {
+            "id": "Leveraging AWS to Support Healthcare and Education",
+            "type": "theme",
+            "importance": "9"
+        },
+        {
+            "id": "Collaboration with the World Health Organization (WHO)",
+            "type": "theme",
+            "importance": "8"
+        },
+        {
+            "id": "Investing in Diagnostic Development",
+            "type": "theme",
+            "importance": "8"
+        },
+        {
+            "id": "Amazon",
+            "type": "Company",
+            "importance": 10
+        },
+        {
+            "id": "Amazonians",
+            "type": "Person",
+            "importance": 7
+        },
+        {
+            "id": "Whole Foods Market",
+            "type": "Company",
+            "importance": 8
+        },
+        {
+            "id": "Amazon Books",
+            "type": "Company",
+            "importance": 5
+        },
+        {
+            "id": "Amazon 4-star",
+            "type": "Company",
+            "importance": 5
+        },
+        {
+            "id": "Amazon Pop Up",
+            "type": "Company",
+            "importance": 5
+        },
+        {
+            "id": "Joe Duffy",
+            "type": "Person",
+            "importance": 4
+        },
+        {
+            "id": "Newark airport",
+            "type": "Organization",
+            "importance": 4
+        },
+        {
+            "id": "Darby Griffin",
+            "type": "Person",
+            "importance": 4
+        },
+        {
+            "id": "Amazon Flex",
+            "type": "Organization",
+            "importance": 6
+        },
+        {
+            "id": "Amazon Relief Fund",
+            "type": "Organization",
+            "importance": 7
+        },
+        {
+            "id": "State Attorneys General Offices (42)",
+            "type": "Organization",
+            "importance": 7
+        },
+        {
+            "id": "Amazon Web Services (AWS)",
+            "type": "Company",
+            "importance": 9
+        },
+        {
+            "id": "World Health Organization (WHO)",
+            "type": "Organization",
+            "importance": 9
+        }
+    ],
+    "edges": [
+        {
+            "source": "COVID-19 crisis",
+            "target": "Increased importance of Amazon to customers",
+            "type": "causal",
+            "weight": 9
+        },
+        {
+            "source": "Spike in demand for essential products with little warning",
+            "target": "Major challenges for suppliers and delivery network",
+            "type": "causal",
+            "weight": 8
+        },
+        {
+            "source": "Vulnerability to the virus",
+            "target": "Setting aside the first hour of shopping at Whole Foods each day for seniors",
+            "type": "causal",
+            "weight": 9
+        },
+        {
+            "source": "Not selling essential products",
+            "target": "Temporary closure of Amazon Books, Amazon 4-star, and Amazon Pop Up stores",
+            "type": "causal",
+            "weight": 10
+        },
+        {
+            "source": "Focus on the safety of employees and contractors",
+            "target": "Made over 150 significant process changes in our operations network and Whole Foods Market stores",
+            "type": "causal",
+            "weight": 9
+        },
+        {
+            "source": "New distancing requirements",
+            "target": "Challenges in training new hires",
+            "type": "causal",
+            "weight": 7
+        },
+        {
+            "source": "Regular testing",
+            "target": "Helping keep people safe and get the economy back up and running.",
+            "type": "causal",
+            "weight": 8
+        },
+        {
+            "source": "Wage increases",
+            "target": "More than $500 million cost",
+            "type": "causal",
+            "weight": 9
+        },
+        {
+            "source": "Lost jobs or furloughs",
+            "target": "People joining Amazon",
+            "type": "causal",
+            "weight": 8
+        },
+        {
+            "source": "COVID-based price gouging",
+            "target": "Removal of over half a million offers from our stores",
+            "type": "causal",
+            "weight": 9
+        },
+        {
+            "source": "Amazonians",
+            "target": "Amazon",
+            "type": "works at",
+            "weight": 1.0
+        },
+        {
+            "source": "Whole Foods Market",
+            "target": "Amazon",
+            "type": "is a subsidiary of",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon Books",
+            "target": "Amazon",
+            "type": "is a subsidiary of",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon 4-star",
+            "target": "Amazon",
+            "type": "is a subsidiary of",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon Pop Up",
+            "target": "Amazon",
+            "type": "is a subsidiary of",
+            "weight": 1.0
+        },
+        {
+            "source": "Joe Duffy",
+            "target": "Amazon",
+            "type": "works at",
+            "weight": 1.0
+        },
+        {
+            "source": "Joe Duffy",
+            "target": "Newark airport",
+            "type": "formerly worked at",
+            "weight": 1.0
+        },
+        {
+            "source": "Darby Griffin",
+            "target": "Amazon",
+            "type": "works at",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon Flex",
+            "target": "Amazon",
+            "type": "associated with",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon Relief Fund",
+            "target": "Amazon",
+            "type": "established by",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon",
+            "target": "State Attorneys General Offices (42)",
+            "type": "turned over information to",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon Web Services (AWS)",
+            "target": "Amazon",
+            "type": "is a service of",
+            "weight": 1.0
+        },
+        {
+            "source": "Amazon",
+            "target": "World Health Organization (WHO)",
+            "type": "collaborates with",
+            "weight": 1.0
+        }
+    ]
+}
