@@ -1,92 +1,47 @@
 {
     "nodes": [
         {
-            "id": "Employee Safety and Well-being",
+            "id": "COVID-19 Response",
             "type": "theme",
             "importance": "10"
         },
         {
-            "id": "Process Changes & Audits",
+            "id": "Ensuring Customer Access to Essential Goods",
             "type": "subtheme",
             "importance": "9"
         },
         {
-            "id": "Social Distancing Measures",
+            "id": "Employee Safety and Well-being",
+            "type": "subtheme",
+            "importance": "10"
+        },
+        {
+            "id": "Price Gouging Prevention",
             "type": "subtheme",
             "importance": "8"
         },
         {
-            "id": "Wage Increases & Overtime Pay",
+            "id": "Supporting the Workforce",
             "type": "subtheme",
             "importance": "9"
+        },
+        {
+            "id": "Employee Support & Compensation",
+            "type": "theme",
+            "importance": "9"
+        },
+        {
+            "id": "Wage Increases and Overtime Pay",
+            "type": "subtheme",
+            "importance": "8"
         },
         {
             "id": "Amazon Relief Fund",
             "type": "subtheme",
-            "importance": "9"
+            "importance": "7"
         },
         {
-            "id": "Meeting Customer Demand During Crisis",
-            "type": "theme",
-            "importance": "10"
-        },
-        {
-            "id": "Prioritizing Essential Products",
-            "type": "subtheme",
-            "importance": "9"
-        },
-        {
-            "id": "Increased Hiring",
-            "type": "subtheme",
-            "importance": "8"
-        },
-        {
-            "id": "Maintaining Operations of Essential Stores",
-            "type": "subtheme",
-            "importance": "8"
-        },
-        {
-            "id": "Combating Price Gouging & Protecting Customers",
-            "type": "theme",
-            "importance": "10"
-        },
-        {
-            "id": "Prioritizing Essential Products",
-            "type": "subtheme",
-            "importance": "9"
-        },
-        {
-            "id": "Removing Inflated Offers",
-            "type": "subtheme",
-            "importance": "8"
-        },
-        {
-            "id": "Suspending Selling Accounts",
-            "type": "subtheme",
-            "importance": "8"
-        },
-        {
-            "id": "Cooperation with Authorities",
-            "type": "subtheme",
-            "importance": "8"
-        },
-        {
-            "id": "Leveraging AWS to Support Crisis Response",
-            "type": "theme",
-            "importance": "9"
-        },
-        {
-            "id": "Supporting Healthcare and Research",
-            "type": "subtheme",
-            "importance": "9"
-        },
-        {
-            "id": "Enabling Remote Learning and Work",
-            "type": "subtheme",
-            "importance": "8"
-        },
-        {
-            "id": "Assisting Governments",
+            "id": "Job Creation",
             "type": "subtheme",
             "importance": "8"
         },
@@ -96,29 +51,49 @@
             "importance": "8"
         },
         {
-            "id": "Developing In-House Testing Lab",
+            "id": "Internal Testing Initiative",
             "type": "subtheme",
             "importance": "8"
         },
         {
-            "id": "Sharing Learnings",
+            "id": "Advocating for Widespread Testing",
             "type": "subtheme",
-            "importance": "8"
+            "importance": "7"
         },
         {
-            "id": "Supporting Global Efforts through Partnerships",
+            "id": "AWS Support During Crisis",
             "type": "theme",
-            "importance": "9"
+            "importance": "8"
         },
         {
-            "id": "Collaboration with WHO",
+            "id": "Providing Scalable Computing Power",
             "type": "subtheme",
-            "importance": "9"
+            "importance": "7"
+        },
+        {
+            "id": "Supporting Healthcare and Education",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Supporting Research Efforts",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Collaboration and Public Health Initiatives",
+            "type": "theme",
+            "importance": "7"
+        },
+        {
+            "id": "Working with the World Health Organization (WHO)",
+            "type": "subtheme",
+            "importance": "8"
         },
         {
             "id": "AWS Diagnostic Development Initiative",
             "type": "subtheme",
-            "importance": "8"
+            "importance": "7"
         },
         {
             "id": "AWS COVID-19 Data Lake",
@@ -128,206 +103,200 @@
         {
             "id": "Amazon",
             "type": "Company",
-            "importance": 10
+            "importance": "10"
         },
         {
             "id": "Amazonians",
             "type": "Employee",
-            "importance": 8
+            "importance": "9"
         },
         {
             "id": "Whole Foods Market",
             "type": "Company",
-            "importance": 8
+            "importance": "8"
         },
         {
             "id": "Amazon Books",
             "type": "Company",
-            "importance": 6
+            "importance": "6"
         },
         {
             "id": "Amazon 4-star",
             "type": "Company",
-            "importance": 6
+            "importance": "6"
         },
         {
             "id": "Amazon Pop Up",
             "type": "Company",
-            "importance": 6
+            "importance": "6"
         },
         {
             "id": "Joe Duffy",
             "type": "Person",
-            "importance": 5
+            "importance": "4"
         },
         {
             "id": "Newark airport",
             "type": "Organization",
-            "importance": 4
+            "importance": "4"
         },
         {
             "id": "Darby Griffin",
             "type": "Person",
-            "importance": 5
-        },
-        {
-            "id": "Dallas preschool",
-            "type": "Organization",
-            "importance": 4
+            "importance": "4"
         },
         {
             "id": "State attorneys general offices",
             "type": "Organization",
-            "importance": 7
+            "importance": "7"
         },
         {
             "id": "Amazon Web Services (AWS)",
             "type": "Company",
-            "importance": 9
+            "importance": "9"
         },
         {
             "id": "World Health Organization (WHO)",
             "type": "Organization",
-            "importance": 9
+            "importance": "9"
         },
         {
             "id": "Independent Delivery Service Partners",
             "type": "Group",
-            "importance": 7
+            "importance": "7"
         },
         {
             "id": "Amazon Flex Participants",
             "type": "Group",
-            "importance": 7
+            "importance": "7"
         },
         {
             "id": "Temporary Employees",
             "type": "Group",
-            "importance": 7
+            "importance": "6"
+        },
+        {
+            "id": "Canada",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "UK",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "Europe",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "US",
+            "type": "Organization",
+            "importance": "5"
         }
     ],
     "edges": [
         {
-            "source": "Employee Safety and Well-being",
-            "target": "Process Changes & Audits",
+            "source": "COVID-19 Response",
+            "target": "Ensuring Customer Access to Essential Goods",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "9"
         },
         {
-            "source": "Employee Safety and Well-being",
-            "target": "Social Distancing Measures",
+            "source": "COVID-19 Response",
+            "target": "Employee Safety and Well-being",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importnace": "10"
+        },
+        {
+            "source": "COVID-19 Response",
+            "target": "Price Gouging Prevention",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "8"
         },
         {
-            "source": "Employee Safety and Well-being",
-            "target": "Wage Increases & Overtime Pay",
+            "source": "COVID-19 Response",
+            "target": "Supporting the Workforce",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "9"
         },
         {
-            "source": "Employee Safety and Well-being",
+            "source": "Employee Support & Compensation",
+            "target": "Wage Increases and Overtime Pay",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importnace": "8"
+        },
+        {
+            "source": "Employee Support & Compensation",
             "target": "Amazon Relief Fund",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "7"
         },
         {
-            "source": "Meeting Customer Demand During Crisis",
-            "target": "Prioritizing Essential Products",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "9"
-        },
-        {
-            "source": "Meeting Customer Demand During Crisis",
-            "target": "Increased Hiring",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "8"
-        },
-        {
-            "source": "Meeting Customer Demand During Crisis",
-            "target": "Maintaining Operations of Essential Stores",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "8"
-        },
-        {
-            "source": "Combating Price Gouging & Protecting Customers",
-            "target": "Removing Inflated Offers",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "8"
-        },
-        {
-            "source": "Combating Price Gouging & Protecting Customers",
-            "target": "Suspending Selling Accounts",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "8"
-        },
-        {
-            "source": "Combating Price Gouging & Protecting Customers",
-            "target": "Cooperation with Authorities",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "8"
-        },
-        {
-            "source": "Leveraging AWS to Support Crisis Response",
-            "target": "Supporting Healthcare and Research",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "9"
-        },
-        {
-            "source": "Leveraging AWS to Support Crisis Response",
-            "target": "Enabling Remote Learning and Work",
-            "name": "parent theme of",
-            "type": "thematic",
-            "importnace": "8"
-        },
-        {
-            "source": "Leveraging AWS to Support Crisis Response",
-            "target": "Assisting Governments",
+            "source": "Employee Support & Compensation",
+            "target": "Job Creation",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "8"
         },
         {
             "source": "Building Testing Capacity",
-            "target": "Developing In-House Testing Lab",
+            "target": "Internal Testing Initiative",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "8"
         },
         {
             "source": "Building Testing Capacity",
-            "target": "Sharing Learnings",
+            "target": "Advocating for Widespread Testing",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "7"
         },
         {
-            "source": "Supporting Global Efforts through Partnerships",
-            "target": "Collaboration with WHO",
+            "source": "AWS Support During Crisis",
+            "target": "Providing Scalable Computing Power",
             "name": "parent theme of",
             "type": "thematic",
-            "importnace": "9"
+            "importnace": "7"
         },
         {
-            "source": "Supporting Global Efforts through Partnerships",
-            "target": "AWS Diagnostic Development Initiative",
+            "source": "AWS Support During Crisis",
+            "target": "Supporting Healthcare and Education",
             "name": "parent theme of",
             "type": "thematic",
             "importnace": "8"
         },
         {
-            "source": "Supporting Global Efforts through Partnerships",
+            "source": "AWS Support During Crisis",
+            "target": "Supporting Research Efforts",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importnace": "8"
+        },
+        {
+            "source": "Collaboration and Public Health Initiatives",
+            "target": "Working with the World Health Organization (WHO)",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importnace": "8"
+        },
+        {
+            "source": "Collaboration and Public Health Initiatives",
+            "target": "AWS Diagnostic Development Initiative",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importnace": "7"
+        },
+        {
+            "source": "Collaboration and Public Health Initiatives",
             "target": "AWS COVID-19 Data Lake",
             "name": "parent theme of",
             "type": "thematic",
@@ -338,159 +307,166 @@
             "target": "Amazon",
             "name": "works at",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "Whole Foods Market",
             "target": "Amazon",
-            "name": "is owned by",
+            "name": "is a subsidiary of",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "Amazon Books",
             "target": "Amazon",
-            "name": "is owned by",
+            "name": "is a subsidiary of",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "Amazon 4-star",
             "target": "Amazon",
-            "name": "is owned by",
+            "name": "is a subsidiary of",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "Amazon Pop Up",
             "target": "Amazon",
-            "name": "is owned by",
+            "name": "is a subsidiary of",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "Joe Duffy",
             "target": "Newark airport",
-            "name": "worked at",
+            "name": "formerly worked at",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
+        },
+        {
+            "source": "Joe Duffy",
+            "target": "Amazon",
+            "name": "works at",
+            "type": "correlated",
+            "importance": 5
         },
         {
             "source": "Darby Griffin",
             "target": "Amazon",
             "name": "works at",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "Amazon",
             "target": "State attorneys general offices",
-            "name": "reports to",
+            "name": "communicates with",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "Amazon Web Services (AWS)",
             "target": "Amazon",
             "name": "is a subsidiary of",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
             "source": "World Health Organization (WHO)",
             "target": "Amazon",
             "name": "collaborates with",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
-            "source": "Amazon",
+            "source": "Amazon Relief Fund",
             "target": "Independent Delivery Service Partners",
             "name": "supports",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
-            "source": "Amazon",
+            "source": "Amazon Relief Fund",
             "target": "Amazon Flex Participants",
             "name": "supports",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
-            "source": "Amazon",
+            "source": "Amazon Relief Fund",
             "target": "Temporary Employees",
             "name": "supports",
             "type": "correlated",
-            "importance": 1
+            "importance": 5
         },
         {
-            "source": "COVID-19 crisis",
-            "target": "Increased importance of Amazon to customers.",
-            "name": "",
+            "source": "COVID-19 Response",
+            "target": "Amazon Web Services (AWS)",
+            "name": "One thing we\u2019ve learned from the COVID-19 crisis is how important Amazon has become to our customers.",
             "type": "causal",
             "importnance": 9
         },
         {
-            "source": "Spike in demand for essential products with little warning",
-            "target": "Major challenges for Amazon's suppliers and delivery network.",
-            "name": "",
+            "source": "Ensuring Customer Access to Essential Goods",
+            "target": "Independent Delivery Service Partners",
+            "name": "The demand we are seeing for essential products has been and remains high. But unlike a predictable holiday surge, this spike occurred with little warning, creating major challenges for our suppliers and delivery network.",
             "type": "causal",
             "importnance": 8
         },
         {
-            "source": "Closure of Amazon Books, 4-star, and Pop Up stores (due to not selling essential products)",
-            "target": "Opportunity for associates from those closed stores to work in other parts of Amazon.",
-            "name": "",
+            "source": "Ensuring Customer Access to Essential Goods",
+            "target": "Whole Foods Market",
+            "name": "We are taking steps to help those most vulnerable to the virus, setting aside the first hour of shopping at Whole Foods each day for seniors.",
             "type": "causal",
             "importnance": 9
         },
         {
-            "source": "Consulting closely with medical experts and health authorities",
-            "target": "Over 150 significant process changes in Amazon's operations network and Whole Foods Market stores to help teams stay healthy.",
-            "name": "",
+            "source": "Ensuring Customer Access to Essential Goods",
+            "target": "Amazon Pop Up",
+            "name": "We have temporarily closed Amazon Books, Amazon 4-star, and Amazon Pop Up stores because they don\u2019t sell essential products",
             "type": "causal",
-            "importnance": 8
+            "importnance": 10
         },
         {
-            "source": "Extensive social distancing measures",
-            "target": "Protection of Amazon associates.",
-            "name": "",
-            "type": "causal",
-            "importnance": 7
-        },
-        {
-            "source": "Regular testing of all Amazonians",
-            "target": "Help keep people safe and help get the economy back up and running.",
-            "name": "",
-            "type": "causal",
-            "importnance": 7
-        },
-        {
-            "source": "Wage increases (minimum wage + overtime pay)",
-            "target": "Cost of more than $500 million through the end of April.",
-            "name": "",
+            "source": "Working with the World Health Organization (WHO)",
+            "target": "Whole Foods Market",
+            "name": "Consulting closely with medical experts and health authorities, we\u2019ve made over 150 significant process changes in our operations network and Whole Foods Market stores to help teams stay healthy",
             "type": "causal",
             "importnance": 9
         },
         {
-            "source": "Loss of jobs or furloughs due to the pandemic",
-            "target": "Many people around the world have suffered financially",
-            "name": "",
+            "source": null,
+            "target": null,
+            "name": "We have eliminated stand-up meetings during shifts, moved information sharing to bulletin boards, staggered break times, and spread out chairs in breakrooms.",
+            "type": "causal",
+            "importnance": 9
+        },
+        {
+            "source": null,
+            "target": "Amazon Web Services (AWS)",
+            "name": "We know that many people around the world have suffered financially as jobs are lost or furloughed. We are happy to have them on our teams until things return to normal",
             "type": "causal",
             "importnance": 8
         },
         {
-            "source": "COVID-based price gouging",
-            "target": "Removal of over half a million offers from Amazon stores and suspension of more than 6,000 selling accounts.",
-            "name": "",
+            "source": "Price Gouging Prevention",
+            "target": null,
+            "name": "We\u2019ve removed over half a million offers from our stores due to COVID-based price gouging",
             "type": "causal",
-            "importnance": 8
+            "importnance": 10
         },
         {
-            "source": "Academic institutions transitioning from in-person to virtual classrooms",
-            "target": "Academic institutions are running on AWS to help ensure continuity of learning.",
-            "name": "",
+            "source": "Providing Scalable Computing Power",
+            "target": "Amazon Web Services (AWS)",
+            "name": "The ability for organizations to access scalable, dependable, and highly secure computing power\u2014whether for vital healthcare work, to help students continue learning, or to keep unprecedented numbers of employees online and productive from home\u2014is critical in this situation.",
+            "type": "causal",
+            "importnance": 9
+        },
+        {
+            "source": "COVID-19 Response",
+            "target": "AWS Diagnostic Development Initiative",
+            "name": "We also launched the AWS Diagnostic Development Initiative, a program to support customers working to bring more accurate diagnostic solutions to market for COVID-19. Better diagnostics help accelerate treatment and containment of this pandemic.",
             "type": "causal",
             "importnance": 9
         }
