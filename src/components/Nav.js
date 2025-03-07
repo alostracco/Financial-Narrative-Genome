@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Login from "./Login";
 
 const Nav = () => {
@@ -7,24 +6,29 @@ const Nav = () => {
   return (
     <>
       <nav style={styles.nav}>
-        <div style={styles.logo}>Stock Sentiment Analysis</div>
-        <div style={styles.links}>
-          <a href="/" style={styles.link}>
-            Home
-          </a>
-          <a href="/dashboard" style={styles.link}>
-            Dashboard
-          </a>
-          <a href="/about" style={styles.link}>
-            About Us
-          </a>
-          <button style={styles.loginButton} onClick={() => setShowLogin(true)}>
-            Login
-          </button>
-          <button style={styles.signupButton}>Sign Up</button>
+        <div style={styles.container}>
+          <div style={styles.logo}>Financial Narrative Genome</div>
+          <div style={styles.links}>
+            <a href="/" style={styles.link}>
+              Home
+            </a>
+            <a href="/dashboard" style={styles.link}>
+              Dashboard
+            </a>
+            <a href="/about" style={styles.link}>
+              About Us
+            </a>
+            <button
+              style={styles.loginButton}
+              onClick={() => setShowLogin(true)}
+            >
+              Login
+            </button>
+            <button style={styles.signupButton}>Sign Up</button>
+          </div>
         </div>
       </nav>
-      {showLogin && ( // Conditionally render the login modal
+      {showLogin && (
         <div style={styles.modal}>
           <div style={styles.modalContent}>
             <button
@@ -43,25 +47,33 @@ const Nav = () => {
 
 const styles = {
   nav: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
     backgroundColor: "#0a192f",
     padding: "1rem 2rem",
     color: "white",
   },
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    maxWidth: "1200px",
+    margin: "0 auto",
+  },
   logo: {
     fontSize: "1.5rem",
     fontWeight: "bold",
+    fontFamily: "IBM Plex Mono",
   },
   links: {
     display: "flex",
     gap: "1rem",
+    fontFamily: "IBM Plex Mono",
   },
   link: {
     color: "white",
     textDecoration: "none",
     fontSize: "1rem",
+    //margintop: "50px",
+    fontFamily: "IBM Plex Mono",
   },
   loginButton: {
     background: "none",
@@ -70,6 +82,7 @@ const styles = {
     borderRadius: "5px",
     padding: "0.5rem 1rem",
     cursor: "pointer",
+    fontFamily: "IBM Plex Mono",
   },
   signupButton: {
     background: "#3c8dbc",
@@ -78,6 +91,7 @@ const styles = {
     borderRadius: "5px",
     padding: "0.5rem 1rem",
     cursor: "pointer",
+    fontFamily: "IBM Plex Mono",
   },
 };
 

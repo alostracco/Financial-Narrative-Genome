@@ -3,35 +3,36 @@ import { FaSearch } from "react-icons/fa";
 import axios from "axios";
 
 const Hero = () => {
-  const [query, setQuery] = useState(""); // Stores user input
-  const [results, setResults] = useState([]); // Stores API results
-  const API_KEY = "kkY8dHH6PUvuS6QV9WYkuFrXY9yqSgQT"; // Your FMP API Key
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+  const API_KEY = "kkY8dHH6PUvuS6QV9WYkuFrXY9yqSgQT";
 
-  // Fetch company names when user types
   useEffect(() => {
     if (query.length > 1) {
       fetchCompanies();
     } else {
-      setResults([]); // Clear results if query is empty
+      setResults([]);
     }
   }, [query]);
 
-  // Fetch company names from Financial Modeling Prep API
+  useEffect(() => {
+    // Prevent scrolling
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.documentElement.style.overflow = "auto";
+      document.body.style.overflow = "auto"; // Restore scrolling on unmount
+    };
+  }, []);
+
   const fetchCompanies = async () => {
     try {
       const response = await axios.get(
         `https://financialmodelingprep.com/api/v3/search?query=${query}&limit=20&apikey=${API_KEY}`
       );
-
-      // Filter to only US (NASDAQ, NYSE) and Canadian (TSX, TSXV) stocks
-      const filteredResults = response.data.filter(
-        (company) =>
-          company.exchangeShortName === "NASDAQ" ||
-          company.exchangeShortName === "NYSE" ||
-          company.exchangeShortName === "TSX" ||
-          company.exchangeShortName === "TSXV"
+      const filteredResults = response.data.filter((company) =>
+        ["NASDAQ", "NYSE", "TSX", "TSXV"].includes(company.exchangeShortName)
       );
-
       setResults(filteredResults);
     } catch (error) {
       console.error("Error fetching company data:", error);
@@ -40,10 +41,12 @@ const Hero = () => {
 
   return (
     <div style={styles.hero}>
-      <h1 style={styles.title}>Analyze Stock Sentiments in Real-Time.</h1>
+      <h1 style={styles.title}>
+        Unraveling Financial Narratives Over Time with AI.
+      </h1>
       <p style={styles.subtitle}>
-        Enter a company name to unveil market trends and public sentiment using
-        advanced AI-driven analysis.
+        Enter a company name to unveil historical summary and public sentiment
+        using AI-driven analysis.
       </p>
       <div style={styles.searchContainer}>
         <FaSearch style={styles.searchIcon} />
@@ -55,7 +58,6 @@ const Hero = () => {
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>
-      {/* Show search results */}
       {results.length > 0 && (
         <ul style={styles.resultsList}>
           {results.map((company) => (
@@ -69,29 +71,33 @@ const Hero = () => {
   );
 };
 
-// Styles
 const styles = {
   hero: {
     fontFamily: "IBM Plex Mono",
-    backgroundImage: `url('/BGImageHomePage.jpg')`,
+    backgroundImage: "url('/BGImageHomePage.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
     height: "100vh",
-    padding: "80px 20px",
+    width: "100vw",
+    paddingTop: "10vh", // Moves content closer to the top
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "flex-start", // Aligns content higher up
     alignItems: "center",
     textAlign: "center",
     color: "white",
   },
+
   title: {
     fontSize: "2.5rem",
-    marginBottom: "1rem",
+    marginBottom: "0.5rem",
+    marginTop: "50px",
   },
   subtitle: {
     fontSize: "1rem",
-    marginBottom: "2rem",
+    marginBottom: "1.5rem",
     maxWidth: "600px",
   },
   searchContainer: {
