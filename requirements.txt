@@ -3,3 +3,12 @@ fuzzywuzzy
 google-generativeai
 import-ipynb
 python-dotenv
+yfinance
+requests
+requests 
+beautifulsoup4 
+openai 
+lxml
+newspaper3k
+lxml[html_clean]
+
