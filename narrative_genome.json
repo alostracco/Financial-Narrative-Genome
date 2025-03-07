@@ -1,244 +1,389 @@
 {
     "nodes": [
         {
-            "id": "Employee Safety and Well-being",
+            "id": "COVID-19 Response",
             "type": "theme",
             "importance": "10"
         },
         {
-            "id": "Meeting Customer Demand for Essential Products",
-            "type": "theme",
-            "importance": "10"
+            "id": "Ensuring Employee Safety",
+            "type": "subtheme",
+            "importance": "9"
+        },
+        {
+            "id": "Maintaining Essential Services",
+            "type": "subtheme",
+            "importance": "8"
         },
         {
             "id": "Combating Price Gouging",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Supporting Public Health Initiatives",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Employee Support and Compensation",
             "type": "theme",
             "importance": "9"
         },
         {
-            "id": "Leveraging AWS to Support Healthcare and Education",
+            "id": "Wage Increases",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Amazon Relief Fund",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Job Creation",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Testing and Innovation",
             "type": "theme",
+            "importance": "7"
+        },
+        {
+            "id": "Building Testing Capacity",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "AWS Diagnostic Development Initiative",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Amazon Web Services (AWS) Support",
+            "type": "theme",
+            "importance": "8"
+        },
+        {
+            "id": "Supporting Healthcare and Research",
+            "type": "subtheme",
             "importance": "9"
         },
         {
-            "id": "Collaboration with the World Health Organization (WHO)",
-            "type": "theme",
+            "id": "Enabling Remote Work and Education",
+            "type": "subtheme",
             "importance": "8"
         },
         {
-            "id": "Investing in Diagnostic Development",
-            "type": "theme",
-            "importance": "8"
+            "id": "Cloud Technologies to WHO",
+            "type": "subtheme",
+            "importance": "9"
         },
         {
             "id": "Amazon",
             "type": "Company",
-            "importance": 10
+            "importance": "10"
         },
         {
             "id": "Amazonians",
-            "type": "Person",
-            "importance": 7
+            "type": "Group",
+            "importance": "7"
         },
         {
             "id": "Whole Foods Market",
             "type": "Company",
-            "importance": 8
+            "importance": "8"
         },
         {
             "id": "Amazon Books",
             "type": "Company",
-            "importance": 5
+            "importance": "5"
         },
         {
             "id": "Amazon 4-star",
             "type": "Company",
-            "importance": 5
+            "importance": "5"
         },
         {
             "id": "Amazon Pop Up",
             "type": "Company",
-            "importance": 5
+            "importance": "5"
         },
         {
             "id": "Joe Duffy",
             "type": "Person",
-            "importance": 4
+            "importance": "3"
         },
         {
             "id": "Newark airport",
             "type": "Organization",
-            "importance": 4
+            "importance": "4"
         },
         {
             "id": "Darby Griffin",
             "type": "Person",
-            "importance": 4
-        },
-        {
-            "id": "Amazon Flex",
-            "type": "Organization",
-            "importance": 6
-        },
-        {
-            "id": "Amazon Relief Fund",
-            "type": "Organization",
-            "importance": 7
-        },
-        {
-            "id": "State Attorneys General Offices (42)",
-            "type": "Organization",
-            "importance": 7
+            "importance": "3"
         },
         {
             "id": "Amazon Web Services (AWS)",
             "type": "Company",
-            "importance": 9
+            "importance": "9"
         },
         {
             "id": "World Health Organization (WHO)",
             "type": "Organization",
-            "importance": 9
+            "importance": "9"
+        },
+        {
+            "id": "state attorneys general",
+            "type": "Group",
+            "importance": "7"
+        },
+        {
+            "id": "Amazon Flex",
+            "type": "Organization",
+            "importance": "6"
         }
     ],
     "edges": [
         {
-            "source": "COVID-19 crisis",
-            "target": "Increased importance of Amazon to customers",
-            "type": "causal",
-            "weight": 9
+            "source": "COVID-19 Response",
+            "target": "Ensuring Employee Safety",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Spike in demand for essential products with little warning",
-            "target": "Major challenges for suppliers and delivery network",
-            "type": "causal",
-            "weight": 8
+            "source": "COVID-19 Response",
+            "target": "Maintaining Essential Services",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Vulnerability to the virus",
-            "target": "Setting aside the first hour of shopping at Whole Foods each day for seniors",
-            "type": "causal",
-            "weight": 9
+            "source": "COVID-19 Response",
+            "target": "Combating Price Gouging",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Not selling essential products",
-            "target": "Temporary closure of Amazon Books, Amazon 4-star, and Amazon Pop Up stores",
-            "type": "causal",
-            "weight": 10
+            "source": "COVID-19 Response",
+            "target": "Supporting Public Health Initiatives",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Focus on the safety of employees and contractors",
-            "target": "Made over 150 significant process changes in our operations network and Whole Foods Market stores",
-            "type": "causal",
-            "weight": 9
+            "source": "Employee Support and Compensation",
+            "target": "Wage Increases",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "New distancing requirements",
-            "target": "Challenges in training new hires",
-            "type": "causal",
-            "weight": 7
+            "source": "Employee Support and Compensation",
+            "target": "Amazon Relief Fund",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Regular testing",
-            "target": "Helping keep people safe and get the economy back up and running.",
-            "type": "causal",
-            "weight": 8
+            "source": "Employee Support and Compensation",
+            "target": "Job Creation",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Wage increases",
-            "target": "More than $500 million cost",
-            "type": "causal",
-            "weight": 9
+            "source": "Testing and Innovation",
+            "target": "Building Testing Capacity",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Lost jobs or furloughs",
-            "target": "People joining Amazon",
-            "type": "causal",
-            "weight": 8
+            "source": "Testing and Innovation",
+            "target": "AWS Diagnostic Development Initiative",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "COVID-based price gouging",
-            "target": "Removal of over half a million offers from our stores",
-            "type": "causal",
-            "weight": 9
+            "source": "Amazon Web Services (AWS) Support",
+            "target": "Supporting Healthcare and Research",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Amazonians",
-            "target": "Amazon",
-            "type": "works at",
-            "weight": 1.0
+            "source": "Amazon Web Services (AWS) Support",
+            "target": "Enabling Remote Work and Education",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Whole Foods Market",
-            "target": "Amazon",
-            "type": "is a subsidiary of",
-            "weight": 1.0
+            "source": "Amazon Web Services (AWS) Support",
+            "target": "Cloud Technologies to WHO",
+            "name": "subtheme of",
+            "type": "thematic",
+            "importnace": 1
         },
         {
-            "source": "Amazon Books",
-            "target": "Amazon",
-            "type": "is a subsidiary of",
-            "weight": 1.0
+            "source": "Amazon",
+            "target": "Whole Foods Market",
+            "name": "owns",
+            "type": "correlated",
+            "importance": 1
         },
         {
-            "source": "Amazon 4-star",
-            "target": "Amazon",
-            "type": "is a subsidiary of",
-            "weight": 1.0
+            "source": "Amazon",
+            "target": "Amazon Books",
+            "name": "owns",
+            "type": "correlated",
+            "importance": 1
         },
         {
-            "source": "Amazon Pop Up",
-            "target": "Amazon",
-            "type": "is a subsidiary of",
-            "weight": 1.0
+            "source": "Amazon",
+            "target": "Amazon 4-star",
+            "name": "owns",
+            "type": "correlated",
+            "importance": 1
+        },
+        {
+            "source": "Amazon",
+            "target": "Amazon Pop Up",
+            "name": "owns",
+            "type": "correlated",
+            "importance": 1
         },
         {
             "source": "Joe Duffy",
             "target": "Amazon",
-            "type": "works at",
-            "weight": 1.0
+            "name": "works at",
+            "type": "correlated",
+            "importance": 1
         },
         {
             "source": "Joe Duffy",
             "target": "Newark airport",
-            "type": "formerly worked at",
-            "weight": 1.0
+            "name": "formerly worked at",
+            "type": "correlated",
+            "importance": 1
         },
         {
             "source": "Darby Griffin",
             "target": "Amazon",
-            "type": "works at",
-            "weight": 1.0
-        },
-        {
-            "source": "Amazon Flex",
-            "target": "Amazon",
-            "type": "associated with",
-            "weight": 1.0
-        },
-        {
-            "source": "Amazon Relief Fund",
-            "target": "Amazon",
-            "type": "established by",
-            "weight": 1.0
+            "name": "works at",
+            "type": "correlated",
+            "importance": 1
         },
         {
             "source": "Amazon",
-            "target": "State Attorneys General Offices (42)",
-            "type": "turned over information to",
-            "weight": 1.0
-        },
-        {
-            "source": "Amazon Web Services (AWS)",
-            "target": "Amazon",
-            "type": "is a service of",
-            "weight": 1.0
+            "target": "Amazon Web Services (AWS)",
+            "name": "offers",
+            "type": "correlated",
+            "importance": 1
         },
         {
             "source": "Amazon",
             "target": "World Health Organization (WHO)",
-            "type": "collaborates with",
-            "weight": 1.0
+            "name": "collaborates with",
+            "type": "correlated",
+            "importance": 1
+        },
+        {
+            "source": "Amazon",
+            "target": "state attorneys general",
+            "name": "communicates with",
+            "type": "correlated",
+            "importance": 1
+        },
+        {
+            "source": "Amazon",
+            "target": "Amazon Flex",
+            "name": "associated with",
+            "type": "correlated",
+            "importance": 1
+        },
+        {
+            "source": "Amazonians",
+            "target": "Amazon",
+            "name": "works at",
+            "type": "correlated",
+            "importance": 1
+        },
+        {
+            "source": "COVID-19 crisis",
+            "target": "Increased importance of Amazon to customers",
+            "name": "",
+            "type": "causal",
+            "importnance": 9
+        },
+        {
+            "source": "Spike in demand for essential products occurred with little warning",
+            "target": "Major challenges for suppliers and delivery network",
+            "name": "",
+            "type": "causal",
+            "importnance": 8
+        },
+        {
+            "source": "Closing of Amazon Books, 4-star, and Pop Up stores",
+            "target": "Associates from those stores offered opportunities to work in other parts of Amazon",
+            "name": "",
+            "type": "causal",
+            "importnance": 10
+        },
+        {
+            "source": "Consulting closely with medical experts and health authorities",
+            "target": "Made over 150 significant process changes in our operations network and Whole Foods Market stores to help teams stay healthy",
+            "name": "",
+            "type": "causal",
+            "importnance": 9
+        },
+        {
+            "source": "New distancing requirements",
+            "target": "Challenging training for new hires",
+            "name": "",
+            "type": "causal",
+            "importnance": 7
+        },
+        {
+            "source": "Regular testing of all Amazonians",
+            "target": "Help keep people safe and help get the economy back up and running",
+            "name": "",
+            "type": "causal",
+            "importnance": 8
+        },
+        {
+            "source": "Increased minimum wage and overtime pay",
+            "target": "Wage increases will cost more than $500 million",
+            "name": "",
+            "type": "causal",
+            "importnance": 9
+        },
+        {
+            "source": "Loss of jobs and furloughs",
+            "target": "People join Amazon teams",
+            "name": "",
+            "type": "causal",
+            "importnance": 7
+        },
+        {
+            "source": "COVID-based price gouging",
+            "target": "Removal of over half a million offers from Amazon stores",
+            "name": "",
+            "type": "causal",
+            "importnance": 9
+        },
+        {
+            "source": "Need to transition from in-person to virtual classrooms",
+            "target": "Academic institutions running on AWS",
+            "name": "",
+            "type": "causal",
+            "importnance": 8
         }
     ]
 }
