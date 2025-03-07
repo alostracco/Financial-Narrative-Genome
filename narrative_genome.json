@@ -23,7 +23,7 @@
         {
             "id": "Amazon Relief Fund",
             "type": "subtheme",
-            "importance": "7"
+            "importance": "9"
         },
         {
             "id": "Meeting Customer Demand During Crisis",
@@ -48,6 +48,11 @@
         {
             "id": "Combating Price Gouging & Protecting Customers",
             "type": "theme",
+            "importance": "10"
+        },
+        {
+            "id": "Prioritizing Essential Products",
+            "type": "subtheme",
             "importance": "9"
         },
         {
@@ -98,12 +103,12 @@
         {
             "id": "Sharing Learnings",
             "type": "subtheme",
-            "importance": "7"
+            "importance": "8"
         },
         {
             "id": "Supporting Global Efforts through Partnerships",
             "type": "theme",
-            "importance": "8"
+            "importance": "9"
         },
         {
             "id": "Collaboration with WHO",
@@ -365,8 +370,8 @@
         },
         {
             "source": "Joe Duffy",
-            "target": "Amazon",
-            "name": "works at",
+            "target": "Newark airport",
+            "name": "worked at",
             "type": "correlated",
             "importance": 1
         },
@@ -480,14 +485,14 @@
             "target": "Removal of over half a million offers from Amazon stores and suspension of more than 6,000 selling accounts.",
             "name": "",
             "type": "causal",
-            "importnance": 9
+            "importnance": 8
         },
         {
             "source": "Academic institutions transitioning from in-person to virtual classrooms",
             "target": "Academic institutions are running on AWS to help ensure continuity of learning.",
             "name": "",
             "type": "causal",
-            "importnance": 8
+            "importnance": 9
         }
     ]
 }
