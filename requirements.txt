@@ -1,0 +1,7 @@
+sentence-transformers
+fuzzywuzzy
+google-generativeai
+json
+import-ipynb
+python-dotenv
+re

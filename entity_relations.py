@@ -5,6 +5,7 @@ import re
 import os
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 er_api_key = os.getenv("API_KEY")
