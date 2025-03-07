@@ -26,7 +26,8 @@ def extract_entities_relationships(financial_text):
     """
     try:
         prompt = f"""
-        Analyze the following financial text and extract the key entities (companies, people, organizations) and their relationships.
+        Analyze the following financial text and extract the key entities (companies, people, organizations, group) and their relationships.
+        Be careful to watch for similar names ie. Amazon (Company), Amazonians(People/Employees)
 
         Financial Text:
         {financial_text}
@@ -36,7 +37,7 @@ def extract_entities_relationships(financial_text):
           "entities": [
             {{
               "name": "Entity Name",
-              "type": "Entity Type (Company, Person, Organization)"
+              "type": "Entity Type (Company, Person, Organization, Group, Employee)"
               "importance": "(1-10)"
             }},
             // ... more entities
