@@ -1,24 +1,33 @@
-from flask import Flask, jsonify, request
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from stock_data import process_ticker  # Import the function to process ticker
+from emotion_graph import generate_graph  # Import the function to generate the graph
+import os
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
-@app.route('/')
-def home():
-    return "Welcome to the Stock Sentiment Analysis API!"
+@app.route('/api/ticker', methods=['POST'])
+def handle_ticker():
+    data = request.json  # Get the JSON data sent from the frontend
+    ticker = data.get('ticker')  # Extract the ticker symbol
 
-# analyze sentiment 
-# @app.route('/analyze', methods=['POST'])
-# def analyze_sentiment():
-#     data = request.get_json()  # if getting json data from the frontend
-#     text = data.get('text')    # gets the 'text' field from input data
+    # Dynamically name the CSV file based on the ticker symbol
+    csv_filename = f"{ticker}_graph.csv"
 
-#     if not text:
-#         return jsonify({"error": "No text provided"}), 400
+    # Check if the CSV file already exists
+    if not os.path.exists(csv_filename):
+        # If it doesn't exist, process the ticker to create the CSV file
+        process_ticker(ticker)
 
-#     sentiment = analyze_stock_sentiment(text)  # function from backend to do sentiment analysis
+    # Generate the graph using the CSV file
+    graph_json = generate_graph(csv_filename)
 
-#     return jsonify({"sentiment": sentiment})  # returns json sentiment analysis result back to frontend
+    # Return the graph JSON to the frontend
+    return jsonify({
+        "message": f"Ticker {ticker} processed successfully!",
+        "graph": graph_json
+    })
 
-# run flask
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)  # Run the Flask server
