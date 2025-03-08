@@ -39,6 +39,18 @@ const Hero = () => {
     }
   };
 
+  // Function to send the ticker symbol to the Flask backend
+  const handleTickerClick = async (ticker) => {
+    try {
+      const response = await axios.post("http://localhost:5000/api/ticker", {
+        ticker: ticker,
+      });
+      console.log("Ticker sent to backend:", response.data);
+    } catch (error) {
+      console.error("Error sending ticker to backend:", error);
+    }
+  };
+
   return (
     <div style={styles.hero}>
       <h1 style={styles.title}>
@@ -61,7 +73,11 @@ const Hero = () => {
       {results.length > 0 && (
         <ul style={styles.resultsList}>
           {results.map((company) => (
-            <li key={company.symbol} style={styles.resultItem}>
+            <li
+              key={company.symbol}
+              style={styles.resultItem}
+              onClick={() => handleTickerClick(company.symbol)} // Send ticker on click
+            >
               {company.name} ({company.symbol}) - {company.exchangeShortName}
             </li>
           ))}
@@ -71,6 +87,7 @@ const Hero = () => {
   );
 };
 
+// Styles remain the same
 const styles = {
   hero: {
     fontFamily: "IBM Plex Mono",
@@ -81,15 +98,14 @@ const styles = {
     backgroundAttachment: "fixed",
     height: "100vh",
     width: "100vw",
-    paddingTop: "10vh", // Moves content closer to the top
+    paddingTop: "10vh",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "flex-start", // Aligns content higher up
+    justifyContent: "flex-start",
     alignItems: "center",
     textAlign: "center",
     color: "white",
   },
-
   title: {
     fontSize: "2.5rem",
     marginBottom: "0.5rem",
