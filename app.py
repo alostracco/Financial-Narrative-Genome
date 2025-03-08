@@ -3,6 +3,7 @@ from flask_cors import CORS
 from stock_data import process_ticker  # Import the function to process ticker
 from emotion_graph import generate_graph  # Import the function to generate the graph
 from news_fetcher import fetch_and_save_news  # Import the function to fetch news
+from narrative_graph import generate_narrative_graph  # Import the function to generate the narrative graph
 import os
 
 app = Flask(__name__)
@@ -30,6 +31,7 @@ def handle_ticker():
 
     # Check if the ticker is AMZN
     summary = None
+    narrative_graph_json = None
     if ticker.upper() == "AMZN":
         # Load the Amazon summary text file
         try:
@@ -38,11 +40,15 @@ def handle_ticker():
         except Exception as e:
             print(f"Error loading Amazon summary: {e}")
 
-    # Return the graph JSON and summary (if applicable) to the frontend
+        # Generate the narrative graph
+        narrative_graph_json = generate_narrative_graph()
+
+    # Return the graph JSON, summary, and narrative graph (if applicable) to the frontend
     return jsonify({
         "message": f"Ticker {ticker} processed successfully!",
         "graph": graph_json,
-        "summary": summary  # Send the summary text if the ticker is AMZN
+        "summary": summary,  # Send the summary text if the ticker is AMZN
+        "narrative_graph": narrative_graph_json  # Send the narrative graph if the ticker is AMZN
     })
 
 if __name__ == '__main__':
