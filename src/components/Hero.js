@@ -7,6 +7,7 @@ const Hero = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [graphData, setGraphData] = useState(null); // State to store graph data
+  const [summary, setSummary] = useState(null); // State to store summary text
   const API_KEY = "kkY8dHH6PUvuS6QV9WYkuFrXY9yqSgQT";
 
   useEffect(() => {
@@ -53,6 +54,13 @@ const Hero = () => {
       if (response.data.graph) {
         setGraphData(JSON.parse(response.data.graph));
       }
+
+      // Set the summary text if available
+      if (response.data.summary) {
+        setSummary(response.data.summary);
+      } else {
+        setSummary(null); // Clear the summary if not applicable
+      }
     } catch (error) {
       console.error("Error sending ticker to backend:", error);
     }
@@ -98,6 +106,13 @@ const Hero = () => {
             layout={graphData.layout}
             config={{ displayModeBar: false }}
           />
+        </div>
+      )}
+      {/* Render the summary if available */}
+      {summary && (
+        <div style={styles.summaryContainer}>
+          <h2>Amazon Summary</h2>
+          <pre style={styles.summaryText}>{summary}</pre>
         </div>
       )}
     </div>
@@ -177,6 +192,19 @@ const styles = {
     backgroundColor: "white",
     borderRadius: "10px",
     padding: "20px",
+  },
+  summaryContainer: {
+    width: "80%",
+    marginTop: "20px",
+    backgroundColor: "#1e293b",
+    borderRadius: "10px",
+    padding: "20px",
+    color: "white",
+    textAlign: "left",
+  },
+  summaryText: {
+    whiteSpace: "pre-wrap", // Preserve formatting of the text
+    fontFamily: "monospace",
   },
 };
 

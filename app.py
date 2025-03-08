@@ -15,6 +15,7 @@ def handle_ticker():
 
     # Dynamically name the CSV file based on the ticker symbol
     csv_filename = f"{ticker}_graph.csv"
+    news_filename = f"{ticker}_news.csv"
 
     # Check if the CSV file already exists
     if not os.path.exists(csv_filename):
@@ -22,17 +23,26 @@ def handle_ticker():
         process_ticker(ticker)
 
         # Fetch and save news articles
-        news_filename = fetch_and_save_news(ticker)
-        if news_filename:
-            print(f"News articles saved to {news_filename}")
+        fetch_and_save_news(ticker)
 
     # Generate the graph using the CSV file
     graph_json = generate_graph(csv_filename)
 
-    # Return the graph JSON to the frontend
+    # Check if the ticker is AMZN
+    summary = None
+    if ticker.upper() == "AMZN":
+        # Load the Amazon summary text file
+        try:
+            with open("AMZN_summary.txt", "r") as file:
+                summary = file.read()
+        except Exception as e:
+            print(f"Error loading Amazon summary: {e}")
+
+    # Return the graph JSON and summary (if applicable) to the frontend
     return jsonify({
         "message": f"Ticker {ticker} processed successfully!",
-        "graph": graph_json
+        "graph": graph_json,
+        "summary": summary  # Send the summary text if the ticker is AMZN
     })
 
 if __name__ == '__main__':
