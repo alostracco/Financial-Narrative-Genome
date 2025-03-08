@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+/* Add a gradient background */
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/BGImageHomePage.jpg");
+  animation: gradient-animation 5s ease infinite;
+}
+
+/* Animation for the gradient */
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  }
+  50% {
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  }
+  100% {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  }
+}
+
+.loading-screen h1 {
+  color: white;
+  font-size: 2.5em;
+}
