@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import "./loading.css";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -16,7 +17,9 @@ const App = () => {
   return (
     <Router>
       {loading ? (
-        <div className="loading-screen">Loading...</div>
+        <div className="loading-screen">
+          <div className="loader"></div>
+        </div>
       ) : (
         <div className="app-container">
           <Nav />

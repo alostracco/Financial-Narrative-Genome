@@ -76,6 +76,7 @@ const styles = {
     fontFamily: "IBM Plex Mono",
   },
   loginButton: {
+    color: "#3c8dbc",
     background: "none",
     border: "1px solid #3c8dbc",
     color: "#3c8dbc",
