@@ -1,0 +1,648 @@
+{
+    "nodes": [
+        {
+            "id": "Customer Obsession",
+            "type": "theme",
+            "importance": "10"
+        },
+        {
+            "id": "Delighting Customers",
+            "type": "subtheme",
+            "importance": "9"
+        },
+        {
+            "id": "Improving Customer Experience",
+            "type": "subtheme",
+            "importance": "9"
+        },
+        {
+            "id": "Meeting Customer Needs",
+            "type": "subtheme",
+            "importance": "9"
+        },
+        {
+            "id": "Innovation and Invention",
+            "type": "theme",
+            "importance": "10"
+        },
+        {
+            "id": "Bold Bets and Experimentation",
+            "type": "subtheme",
+            "importance": "9"
+        },
+        {
+            "id": "Technology and Engineering Excellence",
+            "type": "subtheme",
+            "importance": "9"
+        },
+        {
+            "id": "Problem Solving",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Embracing Failure",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Long-Term Vision",
+            "type": "theme",
+            "importance": "9"
+        },
+        {
+            "id": "Sustainable Growth",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Building an Enduring Franchise",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Operational Excellence",
+            "type": "theme",
+            "importance": "8"
+        },
+        {
+            "id": "Efficiency and Scalability",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Infrastructure Development",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Empowerment of Sellers and Authors",
+            "type": "theme",
+            "importance": "7"
+        },
+        {
+            "id": "Providing Tools and Services",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Creating Opportunities for Growth",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Amazon Prime",
+            "type": "theme",
+            "importance": "8"
+        },
+        {
+            "id": "Expanding Benefits",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Driving Customer Loyalty",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Amazon Web Services (AWS)",
+            "type": "theme",
+            "importance": "8"
+        },
+        {
+            "id": "Scalability and Reliability",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Empowering Businesses",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Social Responsibility",
+            "type": "theme",
+            "importance": "7"
+        },
+        {
+            "id": "Sustainability and Environmental Initiatives",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Employee Welfare and Fair Labor Practices",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Community Support",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Hiring and Employee Development",
+            "type": "theme",
+            "importance": "7"
+        },
+        {
+            "id": "Attracting and Retaining Talent",
+            "type": "subtheme",
+            "importance": "8"
+        },
+        {
+            "id": "Providing Career Opportunities",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Data-Driven Decision Making",
+            "type": "theme",
+            "importance": "7"
+        },
+        {
+            "id": "Analytics",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Experiments and AB Testing",
+            "type": "subtheme",
+            "importance": "7"
+        },
+        {
+            "id": "Amazon",
+            "type": "Company",
+            "importance": "10"
+        },
+        {
+            "id": "Customers",
+            "type": "Group",
+            "importance": "9"
+        },
+        {
+            "id": "Jeffrey P. Bezos",
+            "type": "Person",
+            "importance": "9"
+        },
+        {
+            "id": "Shareholders",
+            "type": "Group",
+            "importance": "8"
+        },
+        {
+            "id": "AWS",
+            "type": "Company",
+            "importance": "8"
+        },
+        {
+            "id": "Employees",
+            "type": "Group",
+            "importance": "8"
+        },
+        {
+            "id": "Prime",
+            "type": "Organization",
+            "importance": "7"
+        },
+        {
+            "id": "Amazon.com, Inc.",
+            "type": "Company",
+            "importance": "7"
+        },
+        {
+            "id": "Kindle",
+            "type": "Organization",
+            "importance": "6"
+        },
+        {
+            "id": "Marketplace",
+            "type": "Organization",
+            "importance": "6"
+        },
+        {
+            "id": "Amazon Web Services",
+            "type": "Company",
+            "importance": "6"
+        },
+        {
+            "id": "Amazonians",
+            "type": "Employee",
+            "importance": "6"
+        },
+        {
+            "id": "Fulfillment by Amazon",
+            "type": "Organization",
+            "importance": "6"
+        },
+        {
+            "id": "Amazon Fresh",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "Echo",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "Alexa",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "Kindle Direct Publishing",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "Prime Instant Video",
+            "type": "Organization",
+            "importance": "5"
+        },
+        {
+            "id": "Shareowners",
+            "type": "Group",
+            "importance": "5"
+        },
+        {
+            "id": "Seattle",
+            "type": "Location",
+            "importance": "4"
+        },
+        {
+            "id": "RJF Books and More",
+            "type": "Company",
+            "importance": "3"
+        },
+        {
+            "id": "EasyLunchboxes",
+            "type": "Company",
+            "importance": "3"
+        },
+        {
+            "id": "Whispersync",
+            "type": "Organization",
+            "importance": "3"
+        },
+        {
+            "id": "Christopher Tholen",
+            "type": "Person",
+            "importance": "3"
+        },
+        {
+            "id": "Kelly Lester",
+            "type": "Person",
+            "importance": "3"
+        },
+        {
+            "id": "Bob Frank",
+            "type": "Person",
+            "importance": "3"
+        },
+        {
+            "id": "A. K. Alexander",
+            "type": "Person",
+            "importance": "3"
+        },
+        {
+            "id": "Blake Crouch",
+            "type": "Person",
+            "importance": "3"
+        },
+        {
+            "id": "Theresa Ragan",
+            "type": "Person",
+            "importance": "3"
+        },
+        {
+            "id": "Robert Bidinotto",
+            "type": "Person",
+            "importance": "3"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Customer Obsession",
+            "target": "Delighting Customers",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "9"
+        },
+        {
+            "source": "Customer Obsession",
+            "target": "Improving Customer Experience",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "9"
+        },
+        {
+            "source": "Customer Obsession",
+            "target": "Meeting Customer Needs",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "9"
+        },
+        {
+            "source": "Innovation and Invention",
+            "target": "Bold Bets and Experimentation",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "9"
+        },
+        {
+            "source": "Innovation and Invention",
+            "target": "Technology and Engineering Excellence",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "9"
+        },
+        {
+            "source": "Innovation and Invention",
+            "target": "Problem Solving",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Innovation and Invention",
+            "target": "Embracing Failure",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Long-Term Vision",
+            "target": "Sustainable Growth",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Long-Term Vision",
+            "target": "Building an Enduring Franchise",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Operational Excellence",
+            "target": "Efficiency and Scalability",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Operational Excellence",
+            "target": "Infrastructure Development",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Empowerment of Sellers and Authors",
+            "target": "Providing Tools and Services",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Empowerment of Sellers and Authors",
+            "target": "Creating Opportunities for Growth",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Amazon Prime",
+            "target": "Expanding Benefits",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Amazon Prime",
+            "target": "Driving Customer Loyalty",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Amazon Web Services (AWS)",
+            "target": "Scalability and Reliability",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Amazon Web Services (AWS)",
+            "target": "Empowering Businesses",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Social Responsibility",
+            "target": "Sustainability and Environmental Initiatives",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Social Responsibility",
+            "target": "Employee Welfare and Fair Labor Practices",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Social Responsibility",
+            "target": "Community Support",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Hiring and Employee Development",
+            "target": "Attracting and Retaining Talent",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "8"
+        },
+        {
+            "source": "Hiring and Employee Development",
+            "target": "Providing Career Opportunities",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Data-Driven Decision Making",
+            "target": "Analytics",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Data-Driven Decision Making",
+            "target": "Experiments and AB Testing",
+            "name": "parent theme of",
+            "type": "thematic",
+            "importance": "7"
+        },
+        {
+            "source": "Amazon",
+            "target": "Amazonians",
+            "name": "employs",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Jeffrey P. Bezos",
+            "target": "Amazon.com, Inc.",
+            "name": "is Founder and Chief Executive Officer of",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Andy Jassy",
+            "target": "Amazon.com, Inc.",
+            "name": "is Chief Executive Officer of",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Amazon",
+            "target": "Customers",
+            "name": "serves",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Amazon",
+            "target": "Marketplace",
+            "name": "provides access to",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Amazon",
+            "target": "Prime",
+            "name": "offers",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Amazon",
+            "target": "AWS",
+            "name": "offers",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "AWS",
+            "target": "Amazon",
+            "name": "is a subsidiary of",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Fulfillment by Amazon",
+            "target": "Amazon",
+            "name": "is a service of",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Christopher Tholen",
+            "target": "BandPage",
+            "name": "is Chief Technology Officer of",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Kelly Lester",
+            "target": "EasyLunchboxes",
+            "name": "is mom entrepreneur of",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Bob Frank",
+            "target": "RJF Books and More",
+            "name": "founded",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Amazon",
+            "target": "Shareholders",
+            "name": "is used by",
+            "type": "correlated",
+            "importance": 5
+        },
+        {
+            "source": "Empowerment of Sellers and Authors",
+            "target": "Amazon.com, Inc.",
+            "name": "We helped independent sellers compete against our first-party business by investing in and offering them the very best selling tools we could imagine and build... Third-party sellers are kicking our first party butt. Badly.",
+            "type": "causal",
+            "importance": 9
+        },
+        {
+            "source": "Customers",
+            "target": "Prime",
+            "name": "Every time a seller joins FBA, Prime members get more Prime eligible selection. The value of membership goes up. This is powerful for our flywheel.",
+            "type": "causal",
+            "importance": 8
+        },
+        {
+            "source": "Amazon Web Services (AWS)",
+            "target": "Amazon Web Services (AWS)",
+            "name": "That approach has allowed AWS to rapidly expand into the world's most comprehensive, widely adopted cloud service. As with our retail business, AWS is made up of many small teams with single-threaded owners, enabling rapid innovation.",
+            "type": "causal",
+            "importance": 9
+        },
+        {
+            "source": "Creating Opportunities for Growth",
+            "target": "Innovation and Invention",
+            "name": "They have helped us grow into a large company, and there are certain things that only large companies can do... but also, if we're not vigilant and thoughtful, size could slow us down and diminish our inventiveness.",
+            "type": "causal",
+            "importance": 8
+        },
+        {
+            "source": "Operational Excellence",
+            "target": "AWS",
+            "name": "AWS is customer obsessed, inventive and experimental, long-term oriented, and cares deeply about operational excellence.",
+            "type": "causal",
+            "importance": 7
+        },
+        {
+            "source": "Driving Customer Loyalty",
+            "target": "Innovation and Invention",
+            "name": "internal motivation - the drive to get the customer to say Wow - keeps the pace of innovation fast.",
+            "type": "causal",
+            "importance": 8
+        },
+        {
+            "source": "Amazon Prime",
+            "target": "Driving Customer Loyalty",
+            "name": "Proactively delighting customers earns trust, which earns more business from those customers, even in new business arenas.",
+            "type": "causal",
+            "importance": 9
+        },
+        {
+            "source": "Customer Obsession",
+            "target": "Delighting Customers",
+            "name": "Amazonians around the world are polishing products and services to a degree that is beyond what's expected or required...and getting customers to say Wow.",
+            "type": "causal",
+            "importance": 8
+        },
+        {
+            "source": "Amazon Web Services (AWS)",
+            "target": "Empowering Businesses",
+            "name": "The most radical and transformative of inventions are often those that empower others to unleash their creativity - to pursue their dreams.",
+            "type": "causal",
+            "importance": 9
+        }
+    ]
+}

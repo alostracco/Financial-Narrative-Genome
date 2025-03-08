@@ -32,15 +32,15 @@ def extract_entities_relationships(financial_text):
         Financial Text:
         {financial_text}
 
-        Output the results in JSON format with the following structure:
+        Output the results in JSON format with the following structure (make sure its actual json, be careful about commas and other characters within text that could cause problems):
         {{
           "entities": [
             {{
               "name": "Entity Name",
-              "type": "Entity Type (Company, Person, Organization, Group, Employee)"
+              "type": "Entity Type (Company, Person, Organization, Group, Employee, Location)"
               "importance": "(1-10)"
             }},
-            // ... more entities
+            // ... more entities (at most give the 30 most frequent)
           ],
           "relationships": [
             {{
