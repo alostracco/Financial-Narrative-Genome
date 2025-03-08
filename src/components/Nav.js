@@ -83,7 +83,9 @@ const styles = {
     padding: "0.5rem 1rem",
     cursor: "pointer",
     fontFamily: "IBM Plex Mono",
+    hover: "blue",
   },
+
   signupButton: {
     background: "#3c8dbc",
     border: "none",
@@ -92,6 +94,7 @@ const styles = {
     padding: "0.5rem 1rem",
     cursor: "pointer",
     fontFamily: "IBM Plex Mono",
+    hover: "dark blue",
   },
 };
 

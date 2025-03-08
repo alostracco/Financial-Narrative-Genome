@@ -2,15 +2,24 @@ import React from "react";
 
 const Login = () => {
   const styles = {
-    container: {
+    hero: {
+      fontFamily: "IBM Plex Mono",
+      backgroundImage: "url('/BGImageHomePage.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundAttachment: "fixed",
+      height: "100vh",
+      width: "100vw",
+      paddingTop: "10vh", // Moves content closer to the top
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center",
+      justifyContent: "flex-start", // Aligns content higher up
       alignItems: "center",
-      height: "100vh",
-      backgroundColor: "#f5f5f5",
-      fontFamily: "Arial, sans-serif",
+      textAlign: "center",
+      color: "white",
     },
+
     form: {
       display: "flex",
       flexDirection: "column",
@@ -59,7 +68,7 @@ const Login = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.hero}>
       <form style={styles.form}>
         <div style={styles.title}>Login</div>
         <input type="email" placeholder="Email Address" style={styles.input} />
