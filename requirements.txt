@@ -7,10 +7,10 @@ yfinance
 requests
 requests 
 beautifulsoup4 
-openai 
 lxml
 newspaper3k
 lxml[html_clean]
+lxml_html_clean
 flask
 flask flask-cors
 plotly

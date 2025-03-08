@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from stock_data import process_ticker  # Import the function to process ticker
 from emotion_graph import generate_graph  # Import the function to generate the graph
+from news_fetcher import fetch_and_save_news  # Import the function to fetch news
 import os
 
 app = Flask(__name__)
@@ -19,6 +20,11 @@ def handle_ticker():
     if not os.path.exists(csv_filename):
         # If it doesn't exist, process the ticker to create the CSV file
         process_ticker(ticker)
+
+        # Fetch and save news articles
+        news_filename = fetch_and_save_news(ticker)
+        if news_filename:
+            print(f"News articles saved to {news_filename}")
 
     # Generate the graph using the CSV file
     graph_json = generate_graph(csv_filename)
