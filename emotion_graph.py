@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Load your dataset (make sure it has 'date', 'stock_price', and emotion columns)
-df = pd.read_csv("stock_data_with_emotions_monthly.csv")  # Replace with actual file
+df = pd.read_csv("AAPL_graph.csv")  # Replace with actual file
 
 # Convert date column to datetime format
 df["date"] = pd.to_datetime(df["date"])
