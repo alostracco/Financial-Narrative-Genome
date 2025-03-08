@@ -11,4 +11,5 @@ openai
 lxml
 newspaper3k
 lxml[html_clean]
-
+flask
+flask flask-cors
