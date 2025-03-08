@@ -13,3 +13,4 @@ newspaper3k
 lxml[html_clean]
 flask
 flask flask-cors
+npm install plotly.js-dist

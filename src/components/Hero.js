@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import axios from "axios";
+import Plot from 'react-plotly.js';
 
 const Hero = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+  const [graphData, setGraphData] = useState(null); // State to store graph data
   const API_KEY = "kkY8dHH6PUvuS6QV9WYkuFrXY9yqSgQT";
 
   useEffect(() => {
@@ -46,6 +48,11 @@ const Hero = () => {
         ticker: ticker,
       });
       console.log("Ticker sent to backend:", response.data);
+
+      // Set the graph data received from the backend
+      if (response.data.graph) {
+        setGraphData(JSON.parse(response.data.graph));
+      }
     } catch (error) {
       console.error("Error sending ticker to backend:", error);
     }
@@ -82,6 +89,16 @@ const Hero = () => {
             </li>
           ))}
         </ul>
+      )}
+      {/* Render the graph if graphData is available */}
+      {graphData && (
+        <div style={styles.graphContainer}>
+          <Plot
+            data={graphData.data}
+            layout={graphData.layout}
+            config={{ displayModeBar: false }}
+          />
+        </div>
       )}
     </div>
   );
@@ -153,6 +170,13 @@ const styles = {
     padding: "10px",
     borderBottom: "1px solid #374151",
     cursor: "pointer",
+  },
+  graphContainer: {
+    width: "80%",
+    marginTop: "20px",
+    backgroundColor: "white",
+    borderRadius: "10px",
+    padding: "20px",
   },
 };
 

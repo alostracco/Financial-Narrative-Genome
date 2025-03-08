@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from stock_data import process_ticker  # Import the function
+from stock_data import process_ticker  # Import the function to process ticker
+from emotion_graph import generate_graph  # Import the function to generate the graph
+import os
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -10,14 +12,21 @@ def handle_ticker():
     data = request.json  # Get the JSON data sent from the frontend
     ticker = data.get('ticker')  # Extract the ticker symbol
 
-    # Call the function to process the ticker
-    csv_filename = process_ticker(ticker)
+    # Dynamically name the CSV file based on the ticker symbol
+    csv_filename = f"{ticker}_graph.csv"
 
-    # For now, just print the ticker and send a response
-    print(f"Received ticker: {ticker}")
+    # Check if the CSV file already exists
+    if not os.path.exists(csv_filename):
+        # If it doesn't exist, process the ticker to create the CSV file
+        process_ticker(ticker)
+
+    # Generate the graph using the CSV file
+    graph_json = generate_graph(csv_filename)
+
+    # Return the graph JSON to the frontend
     return jsonify({
-        "message": f"Ticker {ticker} received successfully!",
-        "csv_filename": csv_filename
+        "message": f"Ticker {ticker} processed successfully!",
+        "graph": graph_json
     })
 
 if __name__ == '__main__':
