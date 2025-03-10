@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom"; // For navigation
 const Hero = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(false); // State to manage loading screen
   const API_KEY = "kkY8dHH6PUvuS6QV9WYkuFrXY9yqSgQT";
   const navigate = useNavigate(); // Hook for navigation
 
@@ -42,42 +43,67 @@ const Hero = () => {
   };
 
   // Function to handle company click
-  const handleCompanyClick = (ticker) => {
-    // Navigate to the Graph page with the ticker as a URL parameter
-    navigate(`/graph/${ticker}`);
+  const handleCompanyClick = async (ticker) => {
+    setLoading(true); // Show loading screen
+    try {
+      const response = await axios.post("http://localhost:5000/api/ticker", {
+        ticker: ticker,
+      });
+      console.log("Ticker sent to backend:", response.data);
+
+      // Navigate to the Graph page with the ticker as a URL parameter
+      navigate(`/graph/${ticker}`);
+    } catch (error) {
+      console.error("Error sending ticker to backend:", error);
+    } finally {
+      setLoading(false); // Hide loading screen
+    }
   };
 
   return (
     <div style={styles.hero}>
-      <h1 style={styles.title}>
-        Unraveling Financial Narratives Over Time with AI.
-      </h1>
-      <p style={styles.subtitle}>
-        Enter a company name to unveil historical summary and public sentiment
-        using AI-driven analysis.
-      </p>
-      <div style={styles.searchContainer}>
-        <FaSearch style={styles.searchIcon} />
-        <input
-          type="text"
-          placeholder="Search for a company to analyze..."
-          style={styles.searchInput}
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      </div>
-      {results.length > 0 && (
-        <ul style={styles.resultsList}>
-          {results.map((company) => (
-            <li
-              key={company.symbol}
-              style={styles.resultItem}
-              onClick={() => handleCompanyClick(company.symbol)} // Navigate to Graph page
-            >
-              {company.name} ({company.symbol}) - {company.exchangeShortName}
-            </li>
-          ))}
-        </ul>
+      {/* Loading screen */}
+      {loading && (
+        <div className="loading-screen">
+          <div className="loader"></div>
+          <p>Generating graph... Please wait.</p>
+        </div>
+      )}
+
+      {/* Conditionally render the search bar and text */}
+      {!loading && (
+        <>
+          <h1 style={styles.title}>
+            Unraveling Financial Narratives Over Time with AI.
+          </h1>
+          <p style={styles.subtitle}>
+            Enter a company name to unveil historical summary and public sentiment
+            using AI-driven analysis.
+          </p>
+          <div style={styles.searchContainer}>
+            <FaSearch style={styles.searchIcon} />
+            <input
+              type="text"
+              placeholder="Search for a company to analyze..."
+              style={styles.searchInput}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+          </div>
+          {results.length > 0 && (
+            <ul style={styles.resultsList}>
+              {results.map((company) => (
+                <li
+                  key={company.symbol}
+                  style={styles.resultItem}
+                  onClick={() => handleCompanyClick(company.symbol)} // Send ticker on click
+                >
+                  {company.name} ({company.symbol}) - {company.exchangeShortName}
+                </li>
+              ))}
+            </ul>
+          )}
+        </>
       )}
     </div>
   );

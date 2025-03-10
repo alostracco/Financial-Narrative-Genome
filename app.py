@@ -4,6 +4,8 @@ from stock_data import process_ticker  # Import the function to process ticker
 from emotion_graph import generate_graph  # Import the function to generate the graph
 from news_fetcher import fetch_and_save_news  # Import the function to fetch news
 from narrative_graph import generate_narrative_graph  # Import the function to generate the narrative graph
+from emotional_tone import process_articles_and_update_graph
+from news_fetcher import get_company_name_from_ticker
 import os
 
 app = Flask(__name__)
@@ -25,6 +27,17 @@ def handle_ticker():
 
         # Fetch and save news articles
         fetch_and_save_news(ticker)
+
+        # Get the company name from the ticker
+        company_name = get_company_name_from_ticker(ticker)
+        if company_name:
+            # Analyze news articles and update the graph CSV with emotional scores
+            try:
+                process_articles_and_update_graph(news_filename, company_name, csv_filename)
+            except Exception as e:
+                print(f"Error during emotion analysis: {e}")
+        else:
+            print(f"Could not fetch company name for ticker {ticker}. Skipping emotion analysis.")
 
     # Generate the graph using the CSV file
     graph_json = generate_graph(csv_filename)

@@ -7,9 +7,12 @@ import os
 from datetime import datetime
 from newspaper import Article
 from urllib.parse import quote_plus
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set GNews API key
-GNEWS_API_KEY = "9150bf2961a14544346706caf3a1df58"
+GNEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
 # List of common suffixes to remove
 SUFFIXES = [' Inc.', ' Ltd.', ' LLC', ' Corp.', ' Corporation', ' Co.', ' Group']
@@ -84,7 +87,7 @@ def scrape_full_content(url):
     
     # Otherwise, continue scraping the content
     article = Article(url)
-    for _ in range(3):  # Retry up to 3 times
+    for _ in range(1):  # Retry up once
         try:
             article.download()
             article.parse()
